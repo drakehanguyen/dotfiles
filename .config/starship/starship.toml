@@ -1,0 +1,100 @@
+format = """
+$os$username$hostname$directory \
+$fill\
+$cmd_duration\
+$fill  \
+$python\
+$rust\
+$nodejs\
+$bun\
+$kotlin\
+$all\
+$line_break\
+$character"""
+# right_format = """$all"""
+command_timeout = 1000
+add_newline = true
+
+[fill]
+style = 'fg:current_line'
+symbol = ' '
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+# Shows the OS
+[os]
+format = '[$symbol](bold white) '
+disabled = false
+
+[os.symbols]
+Windows = ' '
+Arch = '󰣇'
+Ubuntu = ''
+Macos = '󰀵'
+
+# Shows the username
+[username]
+style_user = 'white bold'
+style_root = 'red bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+
+# Shows the hostname
+[hostname]
+ssh_only = true
+format = 'on [$hostname](bold yellow) '
+disabled = false
+
+# Shows current directory
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+truncation_symbol = '…/'
+home_symbol = '󰋜 ~'
+read_only_style = '197'
+read_only = '  '
+format = ' [$path]($style)[$read_only]($read_only_style) '
+
+[cmd_duration]
+format = ' [$duration]($style) '
+min_time = 500
+
+# Shows current git branch
+[git_branch]
+format = '[$symbol$branch]($style)'
+# truncation_length = 4
+truncation_symbol = '…/'
+style = 'bold green'
+
+# Shows current git status
+[git_status]
+format = '([ \( $all_status$ahead_behind\)]($style) )'
+ahead = '[⬆](bold purple) '
+behind = '[⬇](bold purple) '
+staged = '[✚](green) '
+deleted = '[✖](red) '
+renamed = '[➜](purple) '
+stashed = '[✭](cyan) '
+untracked = '[◼](white) '
+modified = '[✱](blue) '
+conflicted = '[═](yellow) '
+diverged = '⇕ '
+up_to_date = ''
+
+[kotlin]
+symbol = ''
+
+[nodejs]
+symbol = ''
+
+
+[python]
+symbol = ''
+
+
+[rust]
+symbol = ''
