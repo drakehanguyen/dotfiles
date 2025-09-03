@@ -1,0 +1,6 @@
+.stowrc
+DS_Store
+atuin/*
+.git
+.gitignore
+README.md

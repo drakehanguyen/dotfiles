@@ -1,0 +1,61 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.1",
+  "schemes" : [
+    {
+      "buttons" : {
+        "clickDebouncing" : {
+          "timeout" : 50
+        },
+        "mappings" : [
+          {
+            "action" : "appExpose",
+            "button" : 3,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          },
+          {
+            "action" : "showDesktop",
+            "button" : 3,
+            "command" : true,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          },
+          {
+            "action" : "missionControl",
+            "button" : 4,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          },
+          {
+            "action" : "mouse.button.back",
+            "button" : 4,
+            "command" : true,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
+        ]
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb031",
+          "productName" : "LIFT",
+          "serialNumber" : "68B8D206",
+          "vendorID" : "0x46d"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 3,
+        "disableAcceleration" : false,
+        "redirectsToScroll" : false,
+        "speed" : 0.1
+      }
+    }
+  ]
+}
