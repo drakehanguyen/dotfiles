@@ -3,5 +3,5 @@ My dotfiles for unix system
 
 ### Install with stow:
 ```bash
-stow .
+stow . --target=$HOME
 ```
