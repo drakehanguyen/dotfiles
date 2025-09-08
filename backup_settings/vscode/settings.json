@@ -1,0 +1,69 @@
+{
+  // General settings
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.exclude": {
+    ".git": true,
+    "**/.git": false
+  },
+  "python.createEnvironment.trigger": "off",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
+  "terminal.external.osxExec": "Ghostty.app",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.explorerKind": "both",
+  "breadcrumbs.enabled": false,
+  "ruff.importStrategy": "useBundled",
+  "telemetry.telemetryLevel": "off",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  // Workbench settings
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.settings.editor": "json",
+  // Editor settings
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, JetbrainsMono",
+  "editor.cursorBlinking": "expand",
+  "editor.tabSize": 2,
+  "editor.minimap.renderCharacters": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.fixAll": "always"
+  },
+  // "files.autoSave": "onFocusChange",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Debug settings
+  "debug.toolBarLocation": "docked",
+  // Terminal settings
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.hideCondition": "never",
+  "terminal.integrated.tabs.location": "right",
+  // Markdown settings
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  // Color customization settings
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#073967",
+    "activityBar.foreground": "#A1F7DB",
+    "activityBarBadge.background": "#00D396",
+    "activityBarBadge.foreground": "#0a4174"
+  },
+  "workbench.iconTheme": "symbols",
+  // Pylance settings
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "standard"
+}
