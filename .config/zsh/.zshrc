@@ -31,6 +31,10 @@ zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 
+# Starship
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
 # Load completions
 autoload -Uz compinit && compinit
 
@@ -71,8 +75,5 @@ alias cat='bat'
 
 # Shell integrations
 eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
-
-# Starship
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(zoxide init zsh)"
+# export _ZO_DOCTOR=0
